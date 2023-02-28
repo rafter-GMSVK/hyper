@@ -6,16 +6,20 @@ import { useRouter } from "next/router";
 const AppBar = (): JSX.Element => {
   const { push } = useRouter();
   return (
-    <div className="flex mx-auto max-h-[148px] justify-around items-center bg-black">
-      <Image
-        onClick={() => {
-          push("/");
-        }}
-        src={Logo}
-        alt="Logo"
-        className="p-4 cursor-pointer"
-      />
-      <button className="flex p-10 text-4xl text-white font-Din">Log in</button>
+    <div className="bg-black sticky top-0 z-10">
+      <div className="flex mx-auto max-h-[148px] justify-between items-center max-w-[1440px]">
+        <Image
+          onClick={() => {
+            push("/");
+          }}
+          src={Logo}
+          alt="Logo"
+          className="p-4 cursor-pointer"
+        />
+        <button className="flex p-10 text-[24px] font-Din text-primary">
+          Log in
+        </button>
+      </div>
     </div>
   );
 };
