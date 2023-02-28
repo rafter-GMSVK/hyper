@@ -16,6 +16,7 @@ module.exports = {
 
       fontFamily: {
         Din: ["Din", "sans-serif"],
+        Helvetica: ["Helvetica", "sans-serif"],
       },
     },
     screens: {
