@@ -15,14 +15,17 @@ module.exports = {
       },
 
       fontFamily: {
-        Din: ["Din", "sans-serif"],
-        Helvetica: ["Helvetica", "sans-serif"],
+        assistant: ["Assistant"],
       },
     },
     screens: {
       desktop: { min: "1218px" },
       tablet: { max: "1217px", min: "768px" },
       mobile: { max: "767px" },
+    },
+    zIndex: {
+      max: "9999",
+      50: 50,
     },
   },
   plugins: [],

@@ -2,8 +2,9 @@ import { LinkedIn } from "./LinkedIn";
 import { Twitter } from "./Twitter";
 import { Facebook } from "./Facebook";
 import { Car } from "./Car";
+import { Menu } from "./Menu";
 
-export type IconType = "linked-in" | "facebook" | "twitter" | "car";
+export type IconType = "linked-in" | "facebook" | "twitter" | "car" | "menu";
 
 export interface IconProps {
   type: IconType;
@@ -36,6 +37,11 @@ export const SVGIcons = ({
     case "car":
       return (
         <Car height={iconHeight} width={iconWidth} className={className} />
+      );
+
+    case "menu":
+      return (
+        <Menu height={iconHeight} width={iconWidth} className={className} />
       );
   }
 };

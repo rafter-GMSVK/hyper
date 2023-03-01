@@ -14,7 +14,7 @@ const Footer = () => {
   const { push } = useRouter();
 
   return (
-    <div className="bg-black">
+    <div className="bg-black ">
       <div className="flex flex-col  max-w-[1440px] mx-auto">
         <div className="w-full max-w-[1440px] mx-auto">
           <div className="flex justify-between items-center">
@@ -55,9 +55,8 @@ const Footer = () => {
             <div className="flex gap-4">
               {socialHandlesList.map((item) => {
                 return (
-                  <Link href={""}>
+                  <Link href={""} key={item}>
                     <SVGIcons
-                      key={item}
                       type={item}
                       width={14}
                       height={14}

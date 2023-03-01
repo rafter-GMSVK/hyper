@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 const BasicLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <AppBar />
       {children}
       <Footer />

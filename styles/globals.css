@@ -5,12 +5,6 @@
 /* fonts.css */
 
 @font-face {
-  font-family: "Din";
-  src: url("/Din.ttf") format("truetype");
-  font-weight: 100;
-}
-
-@font-face {
   font-family: "Helvetica";
   src: url("/Helvetica.ttf") format("truetype");
   font-weight: 100;
@@ -18,150 +12,30 @@
 
 @layer components {
   .h1 {
-    @apply text-[96px] font-Din font-thin not-italic;
+    @apply text-[44px] font-assistant font-thin -tracking-[0.3px] not-italic;
   }
   .h2 {
-    @apply text-[60px] font-Din  not-italic;
+    @apply text-[24px] font-assistant -tracking-[0.3px]  not-italic;
   }
   .h3 {
-    @apply text-[48px] font-Din  not-italic;
+    @apply text-[18px] font-assistant font-thin -tracking-[0.3px]  not-italic;
   }
   .h4 {
-    @apply text-[34px] font-Din  not-italic;
+    @apply text-[16px] font-assistant font-thin -tracking-[0.3px]  not-italic;
   }
   .h5 {
-    @apply text-[24px] font-Din  not-italic;
+    @apply text-[12px] font-assistant font-thin -tracking-[0.3px]  not-italic;
   }
   .h6 {
-    @apply text-[20px] font-Din  not-italic;
+    @apply text-[10px] font-assistant font-thin -tracking-[0.3px]  not-italic;
   }
   .h7 {
-    @apply text-[14px] font-Din  not-italic;
-  }
-  .sub-headline1 {
-    @apply font-montserrat text-[22px] font-[700] capitalize not-italic;
-  }
-  .sub-headline2 {
-    @apply font-montserrat text-[18px] font-[700] capitalize not-italic;
-  }
-  .sub-headline3 {
-    @apply font-montserrat text-[16px] font-[700] capitalize not-italic;
-  }
-  .sub-headline4 {
-    @apply font-montserrat text-[14px] font-[700] capitalize not-italic;
-  }
-  .sub-headline5 {
-    @apply font-montserrat text-[12px] font-[700] capitalize not-italic;
-  }
-  .body1 {
-    @apply font-montserrat text-[16px] font-[400] not-italic;
-  }
-  .body2 {
-    @apply font-montserrat text-[14px] font-[400] not-italic;
-  }
-  .body3 {
-    @apply font-montserrat text-[12px] font-[400] not-italic;
-  }
-  .small1 {
-    @apply font-montserrat text-[16px] font-[600] not-italic;
-  }
-  .small2 {
-    @apply font-montserrat text-[14px] font-[600] not-italic;
-  }
-  .small3 {
-    @apply font-montserrat text-[12px] font-[600] not-italic;
-  }
-  .small4 {
-    @apply font-montserrat text-[10px] font-[600] not-italic;
-  }
-  .table-of-contents {
-    @apply font-montserrat text-[14px] font-[700] not-italic;
-  }
-  .code-desktop {
-    @apply font-robotoMono text-[16px] font-[400] not-italic;
-  }
-  .code {
-    @apply font-robotoMono text-[14px] font-[400] not-italic;
-  }
-  .button1 {
-    @apply font-montserrat text-[16px] font-[700] capitalize not-italic;
-  }
-  .button2 {
-    @apply font-montserrat text-[14px] font-[700] capitalize not-italic;
-  }
-  .button3 {
-    @apply font-montserrat text-[12px] font-[700] capitalize not-italic;
-  }
-  .caption1 {
-    @apply font-montserrat text-[12px] font-[400] not-italic;
-  }
-  .caption2 {
-    @apply font-montserrat text-[10px] font-[400] not-italic;
-  }
-  .overline1 {
-    @apply font-montserrat text-[12px] font-[400] uppercase not-italic;
-  }
-  .overline2 {
-    @apply font-montserrat text-[10px] font-[400] uppercase not-italic;
-  }
-  .contained-button {
-    @apply bg-primary-dark text-neutral-white-lighter hover:bg-primary-darker disabled:bg-neutral-white-darker disabled:text-neutral-black-light;
-  }
-  .outlined-button {
-    @apply border border-solid border-primary-dark text-primary-dark hover:border hover:border-primary-darker hover:text-primary-darker disabled:border-neutral-black-lighter disabled:text-neutral-black-lighter;
-  }
-  .text-button {
-    @apply border-none text-primary-dark hover:text-primary-darker disabled:text-neutral-black-lighter;
-  }
-  .button-large {
-    @apply flex gap-2 py-3 px-4 button1;
-  }
-  .button-medium {
-    @apply flex gap-[6px] py-[10px] px-[14px] button2;
-  }
-  .button-small {
-    @apply flex gap-[6px] py-2 px-3 button3;
-  }
-  .chip-large {
-    @apply flex gap-[6px] py-[10px] px-[14px];
-  }
-  .chip-medium {
-    @apply flex gap-[6px] py-2 px-3;
-  }
-  .chip-small {
-    @apply flex gap-[6px] py-[2px] px-3;
-  }
-  .chip-large {
-    @apply flex gap-[6px] py-[10px] px-[14px];
-  }
-  .chip-medium {
-    @apply flex gap-[6px] py-2 px-3;
-  }
-  .chip-small {
-    @apply flex gap-[6px] py-[2px] px-3;
-  }
-  button {
-    @apply flex flex-row items-center justify-center gap-2 rounded;
-  }
-  .contained-chip-button {
-    @apply rounded-[120px] bg-primary-dark text-neutral-white-light hover:bg-primary-darker dark:hover:text-neutral-black-dark dark:hover:bg-primary-default disabled:bg-none disabled:border-primary-dark dark:disabled:bg-primary-dark dark:disabled:text-neutral-white-light;
-  }
-  .outlined-chip-button {
-    @apply border-2 rounded-[120px] border-primary-dark text-primary-dark hover:border-primary-darker hover:text-primary-darker dark:hover:border-primary-default dark:hover:text-primary-default;
+    @apply text-[8px] font-assistant font-thin -tracking-[0.3px]  not-italic;
   }
   .slide {
-    @apply top-[64px] duration-300 ease-in-out;
+    @apply right-0 duration-300 ease-in-out;
   }
   .slide-out {
-    @apply top-[-500px] duration-300 ease-in-out;
-  }
-  .text-field-large {
-    @apply outline outline-1 hover:outline-[1.5px] focus:outline-[2px] outline-neutral-black-light focus:outline-primary-default hover:outline-primary-default py-3 px-[14px] rounded body2;
-  }
-  .text-field-medium {
-    @apply outline outline-1 outline-neutral-black-light focus:outline-[2px] focus:outline-primary-default hover:outline-primary-default py-[10px] px-3 rounded body3;
-  }
-  .no-scrollbar::-webkit-scrollbar {
-    @apply hidden;
+    @apply right-[-500px] duration-300 ease-in-out;
   }
 }
