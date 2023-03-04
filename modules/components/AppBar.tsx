@@ -1,6 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import Logo from "../../public/logo.png";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import { SVGIcons } from "@/icons/SVGIcons";
 import Link from "next/link";
@@ -28,15 +26,15 @@ const AppBar = (): JSX.Element => {
   }, [drawerRef]);
 
   return (
-    <div className="bg-[#2B2B2B] flex-col mx-auto sticky items-center justify-center top-0 z-max itemce flex w-full">
-      <div className="flex w-full max-h-[148px] justify-between items-center max-w-[1440px]">
-        <Image
+    <div className="bg-[#2B2B2B] flex-col mx-auto sticky top-0 items-center justify-center z-max flex w-full">
+      <div className="flex w-full max-h-[148px] justify-between items-center max-w-[1440px] px-10 desktop:px-20">
+        <img
           onClick={() => {
             push("/");
           }}
-          src={Logo}
+          src="/logo.png"
           alt="Logo"
-          className="p-4 cursor-pointer"
+          className="py-4 cursor-pointer mobile:w-[100px]"
         />
 
         <div className="cursor-pointer" onClick={() => setOpen(!open)}>
@@ -52,13 +50,23 @@ const AppBar = (): JSX.Element => {
         }`}
       >
         <ul className="p-4">
-          <li className=" border-b border-gray-300">
+          <li
+            className=" border-b border-gray-300"
+            onClick={() => {
+              setOpen(false);
+            }}
+          >
             <Link href="/careers" className="hover:text-gray-500 text-primary">
               Careers
             </Link>
           </li>
-          <li className="py-2 border-b border-gray-300">
-            <button className="flex text-[16px]  font-Assistant -tracking-[0.3px] text-primary">
+          <li
+            className="py-2 border-b border-gray-300"
+            onClick={() => {
+              setOpen(false);
+            }}
+          >
+            <button className="flex tex  font-Assistant -tracking-[0.3px] text-primary">
               Login
             </button>
           </li>
