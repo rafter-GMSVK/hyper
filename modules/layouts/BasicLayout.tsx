@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 const BasicLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <div className="">
+    <div className="min-w-[500px] min-h-[800px]">
       <AppBar />
       {children}
       <Footer />

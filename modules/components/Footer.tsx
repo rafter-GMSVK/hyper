@@ -27,7 +27,7 @@ const Footer = () => {
                 }}
                 src="/logo.png"
                 alt="Logo"
-                className="p-4 cursor-pointer mobile:w-[120px]"
+                className="cursor-pointer mobile:w-[120px]"
               />
             </div>
 

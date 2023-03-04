@@ -12,7 +12,7 @@ const Careers = () => {
         >
           <h3 className="h2 mobile:h3 font-[800] ">{job.title}</h3>
           <p className="  mb-4 h3 mobile:h4  font-[800]">{job.description}</p>
-          <ul className="list-disc list-inside mb-4 flex gap-2 flex-col">
+          <ul className=" pl-4 list-disc mb-4 flex gap-2 flex-col">
             {job.skills.map((skill, index) => {
               return (
                 <li className="h4 mobile:h5 font-[800]" key={index}>
